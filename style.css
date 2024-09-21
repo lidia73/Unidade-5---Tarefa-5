@@ -1,0 +1,86 @@
+/* Arquivo: style.css */
+
+/* Variáveis de cores */
+:root {
+    --cor-primaria: #3498db;
+    --cor-secundaria: #2ecc71;
+    --cor-texto: #333;
+    --cor-fundo: #f4f4f4;
+    --cor-borda: #ccc;
+    --cor-hover: #1abc9c;
+}
+
+/* Variáveis de tipografia */
+:root {
+    --fonte-principal: 'Arial', sans-serif;
+    --fonte-tamanho-base: 16px;
+    --fonte-titulo: 'Georgia', serif;
+}
+
+/* Definição geral de estilo */
+body {
+    font-family: var(--fonte-principal);
+    font-size: var(--fonte-tamanho-base);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilização do header */
+header {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--cor-borda);
+}
+
+/* Estilização da navegação */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 0 10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-borda);
+    color: white;
+}
+
+/* Estilização do main */
+main {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+}
+
+/* Estilização de títulos */
+h1, h2, h3 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+}
+
+/* Estilização do footer */
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-top: 3px solid var(--cor-borda);
+}
